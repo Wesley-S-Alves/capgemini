@@ -34,7 +34,7 @@ public class questao2 {
         if(!checaMinuscula){//checa a presença de letras minúsculas.
             System.out.println("Adicione uma letra minúscula a senha.");
         }
-        if(!checaMinuscula){//checa a presença de letras maiúsculas.
+        if(!checaMaiuscula){//checa a presença de letras maiúsculas.
             System.out.println("Adicione uma letra maiúscula a senha.");
         }
         if(!checaNumero){//checa a presença de números
