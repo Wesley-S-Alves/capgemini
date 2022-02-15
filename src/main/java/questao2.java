@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class questao2 {
     public static void main(String[] args) {
         System.out.println("---------Verificador de Senhas----------");
-        System.out.print("insira a senha : ");
+        System.out.println("insira a senha : ");
         Scanner input = new Scanner(System.in);
         String senha = input.next();
         checaSenha(senha);
