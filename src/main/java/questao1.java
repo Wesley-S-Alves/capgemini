@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class questao1 {
     public static void main(String[] args) {
         System.out.println("--------Criador de Escadas---------");
-        System.out.print("insira o número de degraus: ");
+        System.out.println("insira o número de degraus: ");
         Scanner sc = new Scanner(System.in); // le o input do usuário.
         try{ // tenta a criação da escada.
             int n = sc.nextInt(); // tenta a conversão para tipo inteiro.
