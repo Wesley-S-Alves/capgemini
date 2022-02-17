@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class questao3 {
+public class Questao3 {
     public static void main(String[] args) {
         System.out.println("-----------Contador de Anagramas--------------");
         System.out.println("insira a palavra para análise: ");
@@ -11,9 +11,9 @@ public class questao3 {
         procuraAnagrama(anagrama);
     }
 
-    static void procuraAnagrama(String s){
+    static int procuraAnagrama(String s){
         HashMap<String, Integer> map= new HashMap<>();
-
+        s = s.toLowerCase();//força todas as letras pra letras minúsculas
         for(int i = 0; i < s.length(); i++){
             for(int j = i; j < s.length(); j++){
                 char[] valC = s.substring(i, j+1).toCharArray();// cria arrays de char para verificação de anagramas
@@ -32,5 +32,6 @@ public class questao3 {
             contAnagrama += (n * (n-1))/2;
         }
         System.out.println(contAnagrama);
+        return contAnagrama;
     }
 }
