@@ -23,7 +23,7 @@ public class Questao1 {
                 escada.append(" ");
             }
         }
-        escada.append(System.lineSeparator());// adiciona uma nova linha
+        if (i>1){escada.append(System.lineSeparator());}// adiciona uma nova linha
         }
     System.out.println(escada);
     return escada.toString();

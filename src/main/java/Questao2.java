@@ -26,7 +26,7 @@ public class Questao2 {
         boolean checaNumero = temNumero.find();
         boolean checaEspecial = temEspecial.find();
         if (senha.length()< 6) { // checa o tamanho da String.
-            result.append("sua senha possui apenas " + senha.length() +
+            result.append("Sua senha possui apenas " + senha.length() +
                     " caractere(s), faltando " + (6 - senha.length()) + " caractere(s) para ser considerada uma senha segura.\n");
         }
         if(!checaEspecial){ // checa a presença de caracteres especiais.

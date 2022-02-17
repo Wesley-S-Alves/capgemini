@@ -8,10 +8,10 @@ public class Questao3 {
         System.out.println("insira a palavra para análise: ");
         Scanner sc = new Scanner(System.in);
         String anagrama = sc.next();
-        procuraAnagrama(anagrama);
+        calculaAnagrama(anagrama);
     }
 
-    static int procuraAnagrama(String s){
+    static int calculaAnagrama(String s){
         HashMap<String, Integer> map= new HashMap<>();
         s = s.toLowerCase();//força todas as letras pra letras minúsculas
         for(int i = 0; i < s.length(); i++){
